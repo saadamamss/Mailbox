@@ -1,9 +1,15 @@
+<!DOCTYPE html>
 <html>
-  <head>
-    <title>not found page</title>
-  </head>
-  <body>
-
-    <h1>not found</h1>
-  </body>
+<head>
+  <title>404 Page</title>
+  <script>
+    const url = window.location.href;
+    const urlParts = url.split('/');
+    const newUrl = urlParts[0] + '//' + urlParts[2] + '/index.html';
+    window.location.href = newUrl;
+  </script>
+</head>
+<body>
+  Redirecting...
+</body>
 </html>
